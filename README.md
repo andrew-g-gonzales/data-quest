@@ -12,38 +12,37 @@ The Terraform setup should be run with a role with the required priviliges setup
 
 The S3 bucket is assumed to be pre-existing and is not part of the Terraform configuration.  The bucket name can be changed in the ./terraform/vriables.tf file as well as the region and Python version.
 
-
+_This project was developed on Ubuntu 24.04.1_
 
 
 1. Lambda for sourcing data and republising to S3
 
- _data-quest/code/source_lambda/source_lambda.py_ 
+     - _data-quest/code/source_lambda/source_lambda.py_ 
 
-https://github.com/andrew-g-gonzales/data-quest/blob/main/code/source_lambda/source_lambda.py
+     - https://github.com/andrew-g-gonzales/data-quest/blob/main/code/source_lambda/source_lambda.py
 
 
 
 2. Jupyter Notebook .ipynb file with Pandas analysis and report from data published by Lambda in step 1
 
-_data-quest/data-quest.ipynb_
+    - _data-quest/data-quest.ipynb_
 
-https://github.com/andrew-g-gonzales/data-quest/blob/main/data-quest.ipynb
+    - https://github.com/andrew-g-gonzales/data-quest/blob/main/data-quest.ipynb
 
 
 3.  Lambda executing the same code from Jupyter Notebook in step #2.
 
- _data-quest/code/report_lambda/report_lambda.py_ 
+    - _data-quest/code/report_lambda/report_lambda.py_ 
  
-https://github.com/andrew-g-gonzales/data-quest/blob/main/code/report_lambda/report_lambda.py
+    - https://github.com/andrew-g-gonzales/data-quest/blob/main/code/report_lambda/report_lambda.py
 
 
 4. Terraform code for the data pipeline infrastructure setup
 
- _data-quest/terraform_ 
+    - _data-quest/terraform_ 
 
-https://github.com/andrew-g-gonzales/data-quest/tree/main/terraform
-
-
+    - https://github.com/andrew-g-gonzales/data-quest/tree/main/terraform
 
 
-_This project was developed on Ubuntu 24.04.1_
+
+
