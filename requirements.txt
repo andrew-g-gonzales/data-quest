@@ -1,0 +1,6 @@
+requests
+lxml
+boto3
+botocore
+fsspec
+s3fs==2024.6.1
