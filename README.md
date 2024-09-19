@@ -1,6 +1,6 @@
 # Data Quest
 
-### This repo contains a POC example of creating and deplying with Terraform two Lambda functions, an SQS queue and other AWS event sourcing components.
+### This repo contains a POC example of creating and deploying with Terraform two Lambda functions, an SQS queue and other AWS event sourcing components.
 
 ### The execution flow is the following
 
